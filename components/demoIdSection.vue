@@ -34,7 +34,7 @@
                 </v-hover>
                 <v-hover v-slot="{ hover }">
                   <v-btn
-                    class="rounded-0 pt-7 pb-7"
+                    class="rounded-0 pt-7 pb-7 mb-5 mb-md-0"
                     outlined
                     :style="{
                       'background-color': hover ? '#07083A' : 'transparent',
