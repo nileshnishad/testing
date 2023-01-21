@@ -76,32 +76,32 @@ export default {
     return {
       Data: [
         {
-          Title: "No Commission",
+          id: 1,
+          Title: "Daily Withdrawal",
           icon: "01.webp",
           description:
             "Quick and easy access to your money any time on (FairPlay Share Market?). Avail daily withdrawals and trade faster and better!",
-          id: 1,
         },
         {
-          Title: "No DEMAT and KYC required",
+          id: 2,
+          Title: "Low Brokerage",
           icon: "02.webp",
           description:
             "High market brokerage eating away at your profits? Not anymore! With (FP Share Market?)’s lowest (?) brokerage, your money is all yours!",
-          id: 2,
         },
         {
-          Title: "Low brokerage",
+          id: 3,
+          Title: "No DMAT and KYC required",
           icon: "03.webp",
           description:
-            "Do away with lengthy account creation and verification troubles with FPSM’s hassle free trading. All you need is to get started and get trading.",
-          id: 3,
+            "Do away with lengthy account creation and verification troubles with FPSM’s hassle free trading. All you need is ______ to get started and get trading.",
         },
         {
-          Title: "Low MCX/NSC/COMX markets available",
+          id: 4,
+          Title: "MCX/ NSE/ COMEX markets available",
           icon: "04.webp",
           description:
             "FPSM is your one stop shop for all your trading needs. Find all the popular markets under one roof and gain big profits.",
-          id: 4,
         },
       ],
     };
@@ -141,12 +141,11 @@ export default {
     z-index: 2;
   }
 
-  .tradebg-img {
-    z-index: 1;
-  }
+  .tradebg-img,
   .bg3 {
     z-index: 1;
   }
+
   .hand-img {
     z-index: 2;
   }
