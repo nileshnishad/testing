@@ -6,43 +6,40 @@
         :src="require(`@/assets/media/workSectionBg.webp`)"
       >
         <v-container>
-          <v-row> </v-row>
           <v-row>
-            <v-col cols="12" sm="6" xl="6" class="content mt-10" pa-0>
-              <v-row class="">
-                <v-card-title class="white--text">
-                  <div>
-                    <h1>HOW IT WORKS ?</h1>
-                  </div>
-                </v-card-title>
-                <v-col
-                  v-for="title in Work"
-                  :key="title.id"
-                  cols="12"
-                  sm="12"
-                  class=""
-                >
-                  <div>
-                    <v-card class="card d-flex" elevation="0" title>
-                      <v-card-title>
-                        <v-flex class="d-flex">
-                          <div>
-                            <v-img
-                              :src="require(`@/assets/media/` + title.icon)"
-                              class="mr-5"
-                              max-width="40"
-                            >
-                            </v-img>
-                          </div>
-                          <div class="main-content">
-                            {{ title.Title }}
-                          </div>
-                        </v-flex>
-                      </v-card-title>
-                    </v-card>
-                  </div>
-                </v-col>
-              </v-row>
+            <v-col cols="12" sm="6" xl="6" class="content mt-5 pa-0" pa-0>
+              <v-card-title class="white--text">
+                <div>
+                  <h1>HOW IT WORKS ?</h1>
+                </div>
+              </v-card-title>
+              <v-col
+                v-for="title in Work"
+                :key="title.id"
+                cols="12"
+                sm="12"
+                class=""
+              >
+                <div>
+                  <v-card class="card d-flex" elevation="0" title>
+                    <v-card-title>
+                      <v-flex class="d-flex">
+                        <div>
+                          <v-img
+                            :src="require(`@/assets/media/` + title.icon)"
+                            class="mr-5"
+                            max-width="40"
+                          >
+                          </v-img>
+                        </div>
+                        <div class="main-content">
+                          {{ title.Title }}
+                        </div>
+                      </v-flex>
+                    </v-card-title>
+                  </v-card>
+                </div>
+              </v-col>
             </v-col>
             <v-col
               cols="12"
