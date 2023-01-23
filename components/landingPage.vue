@@ -1,15 +1,14 @@
 <template>
   <div>
-    <v-container fluid class="landing">
+    <v-container fluid pa-0>
       <v-img :src="require('@/assets/media/mainBanner.webp')">
         <v-container>
           <v-row>
-            <v-card-title class="white--text pt-10">
+            <v-card-title class="white--text">
               <!-- <h1>Fairplay Market</h1> -->
               <v-img
                 :src="require('@/assets/media/logo.webp')"
-                max-height="205"
-                max-width="250"
+                max-width="230"
                 class="logo"
               >
               </v-img>
@@ -17,14 +16,8 @@
           </v-row>
           <v-row>
             <v-col cols="12 " sm="6" xl="12" class="content">
-              <v-row class="mt-2">
-                <v-col
-                  v-for="title in Data"
-                  :key="title.id"
-                  cols="12"
-                  sm="12"
-                  class="mb-3"
-                >
+              <v-row class="main-con">
+                <v-col v-for="title in Data" :key="title.id" cols="12" sm="12">
                   <div>
                     <v-card class="card d-flex" elevation="0" title>
                       <v-card-title>
@@ -32,14 +25,14 @@
                           <div>
                             <v-img
                               :src="require(`../assets/media/Line.webp`)"
-                              class="mr-5"
+                              class="mr-2"
                             >
                             </v-img>
                           </div>
                           <div>
                             <v-img
                               :src="require(`../assets/media/` + title.icon)"
-                              class="num mr-5"
+                              class="num mr-3"
                             >
                             </v-img>
                           </div>
@@ -54,12 +47,12 @@
               </v-row>
             </v-col>
             <v-col cols="12" sm="6" xl="12" class="phone-img">
-              <v-card-title>
-                <v-img
-                  :src="require(`../assets/media/Vector-Smart-ObjectDWDW.webp`)"
-                >
-                </v-img>
-              </v-card-title>
+              <v-img
+                class="mx-img"
+                max-width="400"
+                :src="require(`../assets/media/Vector-Smart-ObjectDWDW.webp`)"
+              >
+              </v-img>
             </v-col>
           </v-row>
         </v-container>
@@ -106,35 +99,35 @@ export default {
       ],
     };
   },
-  computed: {
-    width() {
-      switch (this.$vuetify.breakpoint.name) {
-        case "xs":
-          return 250;
-      }
-    },
-  },
 };
 </script>
 
 <style scoped>
+.main-con {
+  float: left;
+}
+.main-content {
+  font-family: "Montserrat", sans-serif;
+  word-break: break-word;
+}
 .banner-img {
   height: 100vh;
-  background: transparent;
   color: aliceblue;
+}
+.phone-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .card {
   background-color: transparent;
   color: white;
 }
 .num {
-  max-width: 100%;
+  max-width: 80%;
   max-height: 100%;
 }
-.main-content {
-  font-family: "Montserrat", sans-serif;
-  word-break: break-word;
-}
+
 @media only screen and (min-width: 1024px) {
   .content {
     padding: 30px;
@@ -182,14 +175,8 @@ export default {
   h1 {
     font-family: "Bebas Neue", cursive;
   }
-  .main-content {
-    font-family: "Montserrat", sans-serif;
-  }
 }
-.main-content {
-  font-family: "Montserrat", sans-serif;
-  word-break: break-word;
-}
+
 @media only screen and (min-width: 280px) {
   h1 {
     font-family: "Bebas Neue", cursive;
@@ -197,15 +184,15 @@ export default {
   .logo {
     max-width: 400px;
   }
-  .main-content {
-    font-family: "Montserrat", sans-serif;
-  }
-  .main-content {
-    font-family: "Montserrat", sans-serif;
-    word-break: break-word;
+}
+@media screen and (min-width: 150px) and (max-width: 599px) {
+  .mx-img {
+    max-width: 70% !important;
   }
 }
-.landing {
-  background-image: url("../assets/media/mainBanner.webp");
+@media screen and (min-width: 600px) and (max-width: 2599px) {
+  .mx-img {
+    max-width: 400;
+  }
 }
 </style>
