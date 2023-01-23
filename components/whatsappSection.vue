@@ -2,7 +2,7 @@
   <div>
     <v-container fluid pa-0>
       <v-img :src="require(`@/assets/media/whatsappSection.webp`)">
-        <v-container>
+        <v-container class="mt-4">
           <v-row no-gutters>
             <v-col cols="12" sm="6" class="d-flex" style="align-items: center">
               <v-img
@@ -49,7 +49,7 @@
                 <h4>With our step-by-step guide for beginners</h4>
                 <v-hover v-slot="{ hover }">
                   <v-btn
-                    class="rounded-0 pt-7 pb-7 mt-2"
+                    class="rounded-0 pt-7 pb-7 mt-2 mb-5"
                     outlined
                     :style="{
                       'background-color': hover ? 'green' : 'transparent',

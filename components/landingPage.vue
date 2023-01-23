@@ -4,7 +4,7 @@
       <v-img :src="require('@/assets/media/mainBanner.webp')">
         <v-container>
           <v-row>
-            <v-card-title class="white--text">
+            <v-card-title class="white--text mt-2">
               <!-- <h1>Fairplay Market</h1> -->
               <v-img
                 :src="require('@/assets/media/logo.webp')"
@@ -16,26 +16,32 @@
           </v-row>
           <v-row>
             <v-col cols="12 " sm="6" xl="12" class="content">
-              <v-row class="main-con">
-                <v-col v-for="title in Data" :key="title.id" cols="12" sm="12">
+              <v-row>
+                <v-col
+                  v-for="title in Data"
+                  :key="title.id"
+                  cols="12"
+                  sm="12"
+                  class="pa-md-4 pa-0"
+                >
                   <div>
                     <v-card class="card d-flex" elevation="0" title>
                       <v-card-title>
                         <div class="d-flex">
-                          <div>
-                            <v-img
-                              :src="require(`../assets/media/Line.webp`)"
-                              class="mr-2"
-                            >
-                            </v-img>
-                          </div>
-                          <div>
-                            <v-img
-                              :src="require(`../assets/media/` + title.icon)"
-                              class="num mr-3"
-                            >
-                            </v-img>
-                          </div>
+                          <v-img
+                            :src="require(`../assets/media/Line.webp`)"
+                            class="mr-2 mt-1"
+                            max-height="25"
+                          >
+                          </v-img>
+                          <v-img
+                            :src="require(`../assets/media/` + title.icon)"
+                            class="num mr-3 mt-1"
+                            max-height="25"
+                            max-width="22"
+                          >
+                          </v-img>
+
                           <div class="main-content">
                             {{ title.Title }}
                           </div>
@@ -103,9 +109,6 @@ export default {
 </script>
 
 <style scoped>
-.main-con {
-  float: left;
-}
 .main-content {
   font-family: "Montserrat", sans-serif;
   word-break: break-word;
