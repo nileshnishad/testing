@@ -12,21 +12,23 @@
               >
               </v-img>
             </v-col>
-            <v-col cols="12" sm="6" class="content mt-10">
-              <v-card-title class="white--text pt-10">
+            <v-col cols="12" sm="6" class="content">
+              <v-card-title class="white--text">
                 <v-text>
-                  <h1 class="">
+                  <div class="whatsapp-div">
                     <v-img
                       :src="
                         require(`@/assets/media/Vector-Smart-ObjectCSC.webp`)
                       "
                       max-width="60"
-                      class="mobile_whatsapp_img mt-2 mr-3"
+                      class="mobile_whatsapp_img mr-3"
                     />
-                    WE’D LOVE TO HEAR FROM YOU
-                  </h1>
+                  </div>
                 </v-text>
-                <v-text class="mt-5">
+                <div>
+                  <h1>WE’D LOVE TO HEAR FROM YOU</h1>
+                </div>
+                <v-text>
                   <h4>
                     Do you have questions or suggestions? Our dedicated customer
                     care team is at your service. For all queries, feedback or
@@ -148,6 +150,11 @@ export default {};
     line-height: inherit;
   }
 }
+.whatsapp-div {
+  float: left;
+  height: 150px;
+}
+
 .mobile_whatsapp_img {
   float: left;
 }

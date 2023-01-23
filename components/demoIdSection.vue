@@ -7,12 +7,12 @@
       >
         <v-container>
           <v-row no-gutters>
-            <v-col cols="12" sm="6" class="content mt-10">
-              <v-card-title class="white--text pt-10">
+            <v-col cols="12" sm="6" class="content">
+              <v-card-title class="white--text pt-5">
                 <div>
                   <h1>GET YOUR DEMO ID</h1>
                 </div>
-                <v-text class="mt-10">
+                <v-text class="">
                   <div class="main-content">
                     Are you an avid trader? Are you starting out? Worry not,
                     we’ve made it easy! Click here to get a Demo ID and take a
@@ -65,6 +65,9 @@ export default {};
 </script>
 
 <style scoped>
+h1 {
+  font-family: "Bebas Neue", cursive;
+}
 .banner-img {
   height: 100vh;
   background: transparent;
@@ -115,28 +118,15 @@ export default {};
     word-break: break-word;
     line-height: inherit;
   }
-  h1 {
-    font-family: "Bebas Neue", cursive;
-  }
 }
 .main-content {
   font-family: "Montserrat", sans-serif;
   word-break: break-word;
 }
 @media only screen and (min-width: 280px) {
-  h1 {
-    font-family: "Bebas Neue", cursive;
-  }
   .v-card__title {
     word-break: break-word;
     line-height: inherit;
-  }
-  .main-content {
-    font-family: "Montserrat", sans-serif;
-    word-break: break-word;
-  }
-  h1 {
-    font-family: "Bebas Neue", cursive;
   }
 }
 </style>
