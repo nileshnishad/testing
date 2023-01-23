@@ -2,7 +2,7 @@
   <div>
     <v-container fluid pa-0>
       <v-img :src="require(`@/assets/media/whatsappSection.webp`)">
-        <v-container class="mt-4">
+        <v-container class="mt-4 pa-4">
           <v-row no-gutters>
             <v-col cols="12" sm="6" class="d-flex" style="align-items: center">
               <v-img
