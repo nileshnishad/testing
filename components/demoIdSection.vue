@@ -5,7 +5,7 @@
         class="main-section3bg"
         :src="require(`@/assets/media/demoIdSection.webp`)"
       >
-        <v-container>
+        <v-container class="pa-1">
           <v-row no-gutters>
             <v-col cols="12" sm="6" class="content">
               <v-card-title class="white--text pt-5">
@@ -20,7 +20,7 @@
                   </div>
                 </v-text>
               </v-card-title>
-              <v-card class="pa-4 card mt-8" elevation="0" title>
+              <v-card class="pa-4 card mt-2" elevation="0" title>
                 <v-hover v-slot="{ hover }">
                   <v-btn
                     class="idbtn rounded-0 pt-7 pb-7 mb-5 mb-md-0"

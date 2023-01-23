@@ -2,7 +2,7 @@
   <div>
     <v-container fluid pa-0>
       <v-img :src="require(`@/assets/media/whatsappSection.webp`)">
-        <v-container class="mt-4">
+        <v-container class="mt-4 pa-4">
           <v-row no-gutters>
             <v-col cols="12" sm="6" class="d-flex" style="align-items: center">
               <v-img
@@ -25,13 +25,13 @@
                 <h1>WE’D LOVE TO HEAR FROM YOU</h1>
               </div>
               <v-text>
-                <p class="mt-5">
+                <div class="mt-5 mb-5 main-content">
                   Do you have questions or suggestions? Our dedicated customer
                   care team is at your service. For all queries, feedback or
-                  complaints, contact our agents on : ______
-                </p>
+                  complaints, contact our agents on :
+                </div>
               </v-text>
-              <v-text class="mt-5">
+              <v-text class="mt-10 main-content">
                 <h4>Whatsapp us on</h4>
                 <v-hover v-slot="{ hover }">
                   <v-btn
@@ -45,7 +45,7 @@
                   </v-btn>
                 </v-hover>
               </v-text>
-              <v-text class="mt-10">
+              <v-text class="mt-10 main-content">
                 <h4>With our step-by-step guide for beginners</h4>
                 <v-hover v-slot="{ hover }">
                   <v-btn
@@ -72,6 +72,9 @@ export default {};
 </script>
 
 <style scoped>
+h1 {
+  font-family: "Bebas Neue", cursive;
+}
 .banner-img {
   height: 100vh;
   background: transparent;
@@ -88,6 +91,7 @@ export default {};
 .main-content {
   font-family: "Montserrat", sans-serif;
   word-break: break-word;
+  font-size: 1.25rem;
 }
 @media only screen and (min-width: 1024px) {
   h1 {
