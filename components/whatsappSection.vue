@@ -28,7 +28,7 @@
                 <div class="mt-5 mb-5 main-content">
                   Do you have questions or suggestions? Our dedicated customer
                   care team is at your service. For all queries, feedback or
-                  complaints, contact our agents on : ______
+                  complaints, contact our agents on :
                 </div>
               </v-text>
               <v-text class="mt-10 main-content">
