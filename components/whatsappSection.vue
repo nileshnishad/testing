@@ -8,14 +8,23 @@
               <v-img
                 :src="require(`@/assets/media/Vector-Smart-ObjectCSC.webp`)"
                 max-width="381"
-                class=""
+                class="whatsapp_img"
               >
               </v-img>
             </v-col>
             <v-col cols="12" sm="6" class="content mt-10">
               <v-card-title class="white--text pt-10">
                 <v-text>
-                  <h1>WE’D LOVE TO HEAR FROM YOU</h1>
+                  <h1 class="">
+                    <v-img
+                      :src="
+                        require(`@/assets/media/Vector-Smart-ObjectCSC.webp`)
+                      "
+                      max-width="60"
+                      class="mobile_whatsapp_img mt-2 mr-3"
+                    />
+                    WE’D LOVE TO HEAR FROM YOU
+                  </h1>
                 </v-text>
                 <v-text class="mt-5">
                   <h4>
@@ -137,6 +146,23 @@ export default {};
   .v-card__title {
     word-break: break-word;
     line-height: inherit;
+  }
+}
+.mobile_whatsapp_img {
+  float: left;
+}
+.whatsapp_img {
+  padding: 0px;
+  width: 30%;
+}
+@media screen and (min-width: 150px) and (max-width: 599px) {
+  .whatsapp_img {
+    display: none;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 2200px) {
+  .mobile_whatsapp_img {
+    display: none;
   }
 }
 </style>
