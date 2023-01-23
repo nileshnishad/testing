@@ -78,8 +78,13 @@ export default {};
   max-width: 100%;
   max-height: 100%;
 }
-idbtn {
+
+@media screen and (min-width: 150px) and (max-width: 599px) {
+  .main-section3img {
+    display: none;
+  }
 }
+
 @media only screen and (min-width: 1024px) {
   .content {
     padding: 30px;

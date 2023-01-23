@@ -8,7 +8,7 @@
         <v-container>
           <v-row> </v-row>
           <v-row>
-            <v-col cols="12" sm="6" xl="6" class="content mt-16" pa-0>
+            <v-col cols="12" sm="6" xl="6" class="content mt-10" pa-0>
               <v-row class="">
                 <v-card-title class="white--text">
                   <div>
@@ -20,7 +20,7 @@
                   :key="title.id"
                   cols="12"
                   sm="12"
-                  class="mb-3"
+                  class=""
                 >
                   <div>
                     <v-card class="card d-flex" elevation="0" title>
@@ -29,17 +29,10 @@
                           <div>
                             <v-img
                               :src="require(`@/assets/media/` + title.icon)"
-                              class="mr-10"
-                              max-width="45"
+                              class="mr-5"
+                              max-width="40"
                             >
                             </v-img>
-                          </div>
-                          <div>
-                            <!-- <v-img
-                                    :src="require(`@/icon`)"
-                                    class="num mr-5"
-                                  >
-                                  </v-img> -->
                           </div>
                           <div class="main-content">
                             {{ title.Title }}
@@ -55,22 +48,17 @@
               cols="12"
               sm="6"
               xl="6"
-              class="mt-16"
-              style="display: flex; align-items: center"
+              class="mt-1 mb-3 video-frame d-flex justify-content-center"
             >
-              <!-- <iframe src="https://www.youtube.com/embed/4FSUCRodPr4"
-                        style="width:100%; height:60%; border: 1px solid white;" 
-                            title="Guide to Download Fairplay App" frameborder="0" scrolling="no"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen="allowfullscreen" ></iframe> -->
               <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/4FSUCRodPr4"
+                width="80%"
+                height="80%"
+                class="i_frame"
+                src="https://fairplay-image.fairplay.co.in/landing-promotion.mp4"
                 title="YouTube video player"
-                frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen
+                frameBorder="0"
               ></iframe>
             </v-col>
           </v-row>
@@ -120,33 +108,12 @@ export default {
 </script>
 
 <style scoped>
+h1 {
+  font-family: "Bebas Neue", cursive;
+}
 .card {
   background-color: transparent;
   color: white;
-}
-.main-content {
-  font-family: "Montserrat", sans-serif;
-}
-@media only screen and (min-width: 280px) {
-  h1 {
-    font-family: "Bebas Neue", cursive;
-  }
-  .v-card__title {
-    word-break: break-word;
-    line-height: inherit;
-  }
-  .main-content {
-    font-family: "Montserrat", sans-serif;
-    word-break: break-word;
-  }
-  h1 {
-    font-family: "Bebas Neue", cursive;
-  }
-  iframe {
-  }
-}
-h1 {
-  font-family: "Bebas Neue", cursive;
 }
 .v-card__title {
   word-break: break-word;
@@ -156,7 +123,12 @@ h1 {
   font-family: "Montserrat", sans-serif;
   word-break: break-word;
 }
-h1 {
-  font-family: "Bebas Neue", cursive;
+.video-frame {
+  align-items: center;
+}
+.i_frame {
+  width: 100%;
+  height: 100%;
+  align-items: center;
 }
 </style>
