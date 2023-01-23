@@ -128,63 +128,6 @@ export default {
   max-height: 100%;
 }
 
-@media only screen and (min-width: 1024px) {
-  .content {
-    padding: 30px;
-    z-index: 2;
-  }
-
-  .tradebg-img,
-  .bg3 {
-    z-index: 1;
-  }
-
-  .hand-img {
-    z-index: 2;
-  }
-  .main-section3 {
-    position: relative;
-    z-index: 1111;
-  }
-  .main-section3bg {
-    position: initial;
-  }
-  .main-section3img {
-    position: absolute;
-    z-index: 1;
-    bottom: -33px;
-  }
-  /* .main-section1 {
-    /* position: relative;
-    z-index: 1111; 
-  } */
-  .main-section1bg {
-    position: initial;
-  }
-  .main-section1img {
-    position: absolute;
-    z-index: 1;
-    right: 0;
-    bottom: -33px;
-    width: 470px;
-  }
-  .v-card__title {
-    word-break: break-word;
-    line-height: inherit;
-  }
-  h1 {
-    font-family: "Bebas Neue", cursive;
-  }
-}
-
-@media only screen and (min-width: 280px) {
-  h1 {
-    font-family: "Bebas Neue", cursive;
-  }
-  .logo {
-    max-width: 400px;
-  }
-}
 @media screen and (min-width: 150px) and (max-width: 599px) {
   .mx-img {
     max-width: 70% !important;
