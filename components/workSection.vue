@@ -18,7 +18,7 @@
                 :key="title.id"
                 cols="12"
                 sm="12"
-                class=""
+                class="pa-md-4 pa-0"
               >
                 <div>
                   <v-card class="card d-flex" elevation="0" title>
